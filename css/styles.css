@@ -1,0 +1,71 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+body {
+    background: #456;
+    line-height: 1.5;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    max-width: 1000px;
+}
+
+#block-user-login {
+    background: #ededed;
+    padding: 10px;
+}
+#header {
+    height: 400px;
+    width: 956px;
+    background-image: url('/sites/all/themes/myzen/images/cool-moving-wallpaper-hd.jpg');
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.region-mine {
+    margin: 10px;
+    padding: 5px;
+    background-color: #ededed;
+}
+
+.node-article {
+    opacity:1;
+    -webkit-box-shadow:rgba(0,0,0,0.45) -7px 8px 4px 0px outset;
+    -moz-box-shadow:rgba(0,0,0,0.45) -7px 8px 4px 0px outset;
+    box-shadow:rgba(0,0,0,0.45) -7px 8px 4px 0px outset;
+    /*background:-webkit-linear-gradient(-99deg, rgba(255, 255, 255, 0.658824) 0%, rgba(255, 255, 255, 0.0196078) 100%) 0% 0% / auto repeat scroll padding-box border-box rgb(85, 106, 128);*/
+    background: #ededed;
+    border-width: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.node-page {
+    opacity:1;
+    -webkit-box-shadow:rgba(0,0,0,0.45) -7px 8px 4px 0px outset;
+    -moz-box-shadow:rgba(0,0,0,0.45) -7px 8px 4px 0px outset;
+    box-shadow:rgba(0,0,0,0.45) -7px 8px 4px 0px outset;
+    /*background:-webkit-linear-gradient(-99deg, rgba(255, 255, 255, 0.658824) 0%, rgba(255, 255, 255, 0.0196078) 100%) 0% 0% / auto repeat scroll padding-box border-box rgb(85, 106, 128);*/
+    border-width: 10px;
+    padding 5px;
+    margin: 10px;
+}
