@@ -19,12 +19,25 @@ Drupal.behaviors.my_custom_behavior = {
     //   jQuery type code goes below.
 
     $('a').hover(
+        // function(){$(this).fadeOut(100);}
         function() {
-            $(this).fadeOut(100);
+            $(this).addClass('hover');
+        }, function(){
+            $(this).removeClass('hover');
         }
     );
 
+    // $('p').hover(
+    //     function() {
+    //         $(this).hide('slow');
+    //     }
+    // );
 
+    //BACK TO THE TOP
+    $('.top').click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+    });
 }
 
 }
